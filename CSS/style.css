@@ -304,8 +304,8 @@ body {
 .about .row .about-img img {
   width: 100%;
   mask-image: url(../img/msk\ coffee.svg);
+  mask-position: inherit;
   mask-size: 75%;
-
 }
 
 .about .row .content {
@@ -669,6 +669,8 @@ footer .credit a {
     height: 24rem;
     object-fit: cover;
     object-position: center;
+    mask-size: 75%;
+    mask-position: 0cm;
   }
 
   .about .row .content {
@@ -757,6 +759,8 @@ footer .credit a {
     height: 24rem;
     object-fit: cover;
     object-position: center;
+    mask-size: 75%;
+    mask-position: 0cm;
   }
 
   .about .row .content {
