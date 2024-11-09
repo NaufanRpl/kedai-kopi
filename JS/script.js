@@ -77,3 +77,21 @@ window.onclick = (e) => {
     }
   });
 };
+
+// ScrollBar
+const hideScrollbarTimeout = 2000;
+let scrollTimeout;
+function showScrollbar() {
+  document.documentElement.style.setProperty("--scrollbar-opacity", "1");
+}
+function hideScrollbar() {
+  document.documentElement.style.setProperty("--scrollbar-opacity", "0");
+}
+
+window.addEventListener("scroll", () => {
+  showScrollbar();
+  clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(hideScrollbar, hideScrollbarTimeout);
+});
+
+hideScrollbar();
